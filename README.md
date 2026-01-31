@@ -1,4 +1,3 @@
-# this is my study content about C
-## Essential and fundamentals
+# This is my study notes about C
 
 hello, world!
