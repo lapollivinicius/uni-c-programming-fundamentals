@@ -15,4 +15,6 @@ int main() {
     avarageFinal = (note1 + note2) / 2;
 
     printf("the student's final average is %.1f \n", avarageFinal);
+
+    return 0;
 }
