@@ -11,7 +11,7 @@ int main() {
 
     // vars card 01
     int population, touristSpot;
-    float stateArea, productPerCapita;
+    float stateArea, grossDomesticProduct, populationDensity, perCapita;
     char idCard[4], nameCity[30];
     char state;
 
@@ -35,13 +35,17 @@ int main() {
     printf("Enter the state area (km2): ");
     scanf("%f", &stateArea);
 
-    // input PIB
-    printf("Enter the PIB of state: ");
-    scanf("%f", &productPerCapita);
+    // input GDP
+    printf("Enter the GDP of state: ");
+    scanf("%f", &grossDomesticProduct);
 
     // input tourist attractions / tourist spots
     printf("Enter the number of tourist attractions: ");
     scanf("%i", &touristSpot);
+
+    populationDensity = (float) population / stateArea;
+
+    perCapita = (float) grossDomesticProduct / population;
 
     // output card 01
     printf("=========== CARD 01 =========== \n");
@@ -50,8 +54,10 @@ int main() {
     printf("NAME OF CITY: %s \n", nameCity);
     printf("POPULATION: %i \n", population);
     printf("STATE AREA: %.2fkm2 \n", stateArea);
-    printf("PIB: US$%.2fbi \n", productPerCapita);
-    printf("NUMBER OF TOURIST ATTRACTIONS: %i \n", touristSpot);
+    printf("GDP: US$%.2f \n", grossDomesticProduct);
+    printf("Number of Tourist Attractions: %i \n", touristSpot);
+    printf("Population Density: %.2f \n", populationDensity);
+    printf("GDP per capita: %.2f \n", perCapita);
 
     printf("=========== + =========== \n");
     printf("Now register the second card \n");
@@ -61,7 +67,7 @@ int main() {
 
     // vars card 02
     int population2, touristSpot2;
-    float stateArea2, productPerCapita2;
+    float stateArea2, grossDomesticProduct2, populationDensity2, perCapita2;
     char idCard2[4], nameCity2[30];
     char state2;
 
@@ -85,13 +91,19 @@ int main() {
     printf("Enter the state area (km2): ");
     scanf("%f", &stateArea2);
 
-    // input PIB
+    // input GDP
     printf("Enter the PIB of state: ");
-    scanf("%f", &productPerCapita2);
+    scanf("%f", &grossDomesticProduct2);
 
     // input tourist attractions / tourist spots
     printf("Enter the number of tourist attractions: ");
     scanf("%i", &touristSpot2);
+
+    populationDensity2 = (float) population2 / stateArea2;
+
+    perCapita2 = (float) grossDomesticProduct2 / population2;
+
+    printf("=========== + =========== \n");
 
     // output card 01
     printf("CARD 01: \n");
@@ -100,8 +112,10 @@ int main() {
     printf("NAME OF CITY: %s \n", nameCity);
     printf("POPULATION: %i \n", population);
     printf("STATE AREA: %.2fkm2 \n", stateArea);
-    printf("PIB: US$%.2fbi \n", productPerCapita);
-    printf("NUMBER OF TOURIST ATTRACTIONS: %i \n \n", touristSpot);
+    printf("GDP: US$%.2f \n", grossDomesticProduct);
+    printf("Number of Tourist Attractions: %i \n", touristSpot);
+    printf("Population Density: %.2f person/km2 \n", populationDensity);
+    printf("GDP per capita: US$%.2f \n", perCapita); 
 
     // output card 02
     printf("CARD 02: \n");
@@ -110,7 +124,8 @@ int main() {
     printf("NAME OF CITY: %s \n", nameCity2);
     printf("POPULATION: %i \n", population2);
     printf("STATE AREA: %.2fkm2 \n", stateArea2);
-    printf("PIB: US$%.2fbi \n", productPerCapita2);
-    printf("NUMBER OF TOURIST ATTRACTIONS: %i \n", touristSpot2);
-
+    printf("GDP: US$%.2f \n", grossDomesticProduct2);
+    printf("Number of Tourist Attractions: %i \n", touristSpot2);
+    printf("Population Density: %.2f person/km2 \n", populationDensity2);
+    printf("GDP per capita: US$%.2f \n", perCapita2); 
 }
