@@ -137,13 +137,14 @@ int main() {
     printf("GDP per capita: US$%.2f \n", perCapita2); 
     printf("Super Power: %f \n", (float)power2);
 
+    // output of comparison
     printf("=========== + =========== \n");
-    printf("Comparing cards: \n");
-    printf("Population: \n");
-    printf("Area: \n");
-    printf("GDP: \n");
-    printf("Tourist spot: \n");
-    printf("Comparing cards: \n");
-    printf("Comparing cards: \n");
-    printf("Comparing cards: \n");
+    printf("Comparing cards \n");
+    printf("Population: %d \n", (population > population2));
+    printf("Area: %d \n", (stateArea > stateArea2));
+    printf("GDP: %d \n", (grossDomesticProduct > grossDomesticProduct2));
+    printf("Tourist spot: %d \n", (touristSpot > touristSpot2));
+    printf("Density Population: %d \n", (populationDensity > populationDensity2));
+    printf("Per Capita: %d \n", (perCapita > perCapita2));
+    printf("Power: %d \n", (power > power2));
 }
