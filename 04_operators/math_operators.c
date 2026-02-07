@@ -33,4 +33,5 @@ int main() {
     ++c;
     printf("%i \n", c);
 
+    return 0;
 }

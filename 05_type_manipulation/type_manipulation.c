@@ -13,4 +13,5 @@ int main() {
     float d = (float) a / b;
     printf("%.2f \n", d);
 
+    return 0;
 }

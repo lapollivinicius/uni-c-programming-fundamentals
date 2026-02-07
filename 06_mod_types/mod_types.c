@@ -42,4 +42,5 @@ int main() {
     printf("%d \n", f);
     printf("%zu bytes \n", sizeof(f));
 
+    return 0;
 }

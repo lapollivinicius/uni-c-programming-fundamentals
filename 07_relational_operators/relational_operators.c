@@ -7,22 +7,22 @@ int main() {
     int b = 15;
 
     // great then
-    bool gt = a > b;
+    int gt = a > b;
 
     // less then
-    bool lt = a < b;
+    int lt = a < b;
 
     // great or equal then
-    bool get = a >= b;
+    int get = a >= b;
 
     // less or equal then
-    bool let = a <= b;
+    int let = a <= b;
 
     // equal then
-    bool e = a == b;
+    int e = a == b;
 
     // different
-    bool d = a != b;
+    int d = a != b;
 
     printf("%d \n", gt);
     printf("%d \n", lt);
@@ -31,4 +31,5 @@ int main() {
     printf("%d \n", e);
     printf("%d \n", d);
 
+    return 0;
 }
