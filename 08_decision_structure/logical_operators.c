@@ -8,4 +8,5 @@ int main() {
     // to XOR
     // to XNOR
     
+    return 0;
 }

@@ -30,4 +30,6 @@ int main() {
             printf("digit a number between 0 to 5 \n");
             break;
     }
+
+    return 0;
 }

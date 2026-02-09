@@ -13,4 +13,6 @@ int main() {
     } else {
         printf("c is the greater number");
     }
+
+    return 0;
 }
