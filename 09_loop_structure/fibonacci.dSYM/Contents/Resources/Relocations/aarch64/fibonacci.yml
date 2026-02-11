@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/lapollivinicius/Desktop/vini/Code/Faculdade/uni-c-programming-fundamentals/09_loop_structure/fibonacci'
+relocations:     []
+...

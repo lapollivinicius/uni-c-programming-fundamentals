@@ -24,7 +24,6 @@ int main() {
         if (board[ship2[i]][3]) break;
         board[ship2[i]][3] = 2;
     }
-
     for (int i = 0 ; i < 5 ; i++) {
         for (int c = 0 ; c < 6 ; c++) {
             printf("%d ", board[i][c]);
